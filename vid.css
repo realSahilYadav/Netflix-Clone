@@ -1,0 +1,92 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif; /* Apply Poppins font */
+    background-color: #141414;
+    color: #fff;
+}
+
+nav {
+    justify-content: space-around;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600; 
+}
+
+h2 {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.gallery {
+    padding: 20px;
+}
+
+.category {
+    margin-bottom: 30px;
+}
+
+.video-row {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    scrollbar-width: none;
+}
+
+.video-row::-webkit-scrollbar {
+    display: none;
+}
+
+.video-card {
+    min-width: 200px;
+    height: 120px;
+    background-image: url('assets/images/videocard.jpg'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.video-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+}
