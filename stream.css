@@ -66,23 +66,30 @@ header .btn-red-sm {
 
 .video-row {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    overflow-x: auto;
+    padding: 10px;
+    scrollbar-width: none;
+}
+
+.video-row::-webkit-scrollbar {
+    display: none;
 }
 
 .video-card {
-    width: 150px;
-    height: 100px;
-    background-color: #333;
-    border-radius: 5px;
-    cursor: pointer;
-    background-image: url('assets/images/videocard.jpg');
+    min-width: 200px;
+    height: 120px;
+    background-image: url('assets/images/videocard.jpg'); 
     background-size: cover;
     background-position: center;
+    border-radius: 8px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
+
 .video-card:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
 }
