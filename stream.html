@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix | Watch</title>
+    <link rel="icon" type="x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="stream.css">
+</head>
+<body>
+    <header>
+        <img src="assets/images/logo.svg" alt="">
+        <button class="btn btn-red-sm" onclick="location.href='index.html';">Sign Out</button>
+    </header>
+
+    <div class="video-container">
+        <video controls autoplay>
+            <source src="assets/videos/stream.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-details">
+            <h1>The Gray Man</h1>
+            <p>You've been Rick Rolled</p>
+        </div>
+    </div>
+
+    <div class="related-videos">
+        <h2>More Like This</h2>
+        <div class="video-row">
+            <div class="video-card" onclick="location.href='stream.html';"></div>
+            <div class="video-card" onclick="location.href='stream.html';"></div>
+            <div class="video-card" onclick="location.href='stream.html';"></div>
+            <div class="video-card" onclick="location.href='stream.html';"></div>
+            <div class="video-card" onclick="location.href='stream.html';"></div>
+            <div class="video-card" onclick="location.href='stream.html';"></div>
+        </div>
+    </div>
+</body>
+</html>

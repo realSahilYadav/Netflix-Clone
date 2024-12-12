@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: #000;
+}
+header img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+header .btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+header .btn-red-sm {
+    background-color: red;
+    color: white;
+}
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.video-container video {
+    width: 80%;
+    max-width: 1000px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+.video-details {
+    margin: 20px 0;
+    text-align: center;
+}
+.related-videos {
+    padding: 20px;
+}
+.related-videos h2 {
+    margin-bottom: 10px;
+}
+.video-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.video-card {
+    width: 150px;
+    height: 100px;
+    background-color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: url('assets/images/videocard.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.video-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
