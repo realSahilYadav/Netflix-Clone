@@ -6,6 +6,7 @@ body {
     background-color: #141414;
     color: #fff;
 }
+
 header {
     display: flex;
     justify-content: space-around;
@@ -13,12 +14,14 @@ header {
     height: 100px;
     background-color: #000;
 }
+
 header img {
     color: red;
     width: 130px;
     position: relative;
     z-index: 10;
 }
+
 header .btn {
     padding: 3px 8px;
     font-weight: 400;
@@ -33,34 +36,41 @@ header .btn-red-sm {
     background-color: red;
     color: white;
 }
+
 .video-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
+
 .video-container video {
     width: 80%;
     max-width: 1000px;
     border: 2px solid #333;
     border-radius: 10px;
 }
+
 .video-details {
     margin: 20px 0;
     text-align: center;
 }
+
 .related-videos {
     padding: 20px;
 }
+
 .related-videos h2 {
     margin-bottom: 10px;
 }
+
 .video-row {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
 }
+
 .video-card {
     width: 150px;
     height: 100px;
@@ -71,6 +81,7 @@ header .btn-red-sm {
     background-size: cover;
     background-position: center;
 }
+
 .video-card:hover {
     transform: scale(1.05);
     transition: 0.3s;
